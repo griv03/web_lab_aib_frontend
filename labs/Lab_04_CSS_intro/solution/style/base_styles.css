@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100;
+  margin: 0;
+  background-color: orange;
+  background: orange;
+}
+
+button {
+  border: 1px solid #000;
+  padding: 25px 50px;
+  color: white;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: black;
+  cursor: pointer;
+  transition: 1s;
+}
