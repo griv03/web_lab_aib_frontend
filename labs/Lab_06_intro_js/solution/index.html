@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS</title>
+</head>
+<body>
+<script>
+// №1
+    console.log("---1---");
+    let apple = 10;
+    alert(apple);
+    console.log(apple);
+    let condition = Math.random().toString(36).substring(2);
+    console.log('Good game is ' + condition);
+
+// №2
+    console.log("---2---");
+    let str = "100";
+    let a = 4;
+    let b = true;
+    console.log(str + a);
+    console.log(str + b);
+    console.log(a + b);
+    console.log(a + str);
+    console.log(b + a);
+    console.log(b + str);
+
+// №3
+    console.log("---3---");
+    let array = [];
+    for (let i = 0; i < 10; i++)
+     { 
+        array.push(Math.random() * 21 - 10);
+     }
+     array = array.filter(function(element)
+      {
+        return element >= 0;
+      });
+     console.log(array);
+
+// №4
+    console.log("---4---");
+    function rand()
+    {
+        let rnd;
+        return rnd = Math.random() * 21 - 10;
+    }
+    function multiplyArray(arr, num)
+     {
+      let result = [];
+      for (let i = 0; i < arr.length; i++) {
+        result.push(arr[i] * num);
+     }
+     return result;
+    }
+    let generateRandomWord = () => {
+        var wordList = ["one", "sheep", "orange", "train", "while"];
+        var randomIndex = Math.floor(Math.random() * wordList.length);
+        var randomWord = wordList[randomIndex];
+        console.log(randomWord);
+    };
+    let mas = [1, 3, 5, 6, 10, 11]
+    console.log(rand());
+    let x = rand();
+    console.log(multiplyArray(mas,x));
+    generateRandomWord();
+
+// №5
+    console.log("---5---");
+    let person = {};
+    person.firstname = "Jhon";
+    person.surname = "Grey";
+    person.patronymic = "Drakeovich";
+    person.birthyear = 1999;
+    person.hobby = "drink";
+    person.group = "4";
+    function data(p) {
+        let dt = "";
+        dt += p.firstname;
+        dt += ' ';
+        dt += p.surname;
+        dt += ', ';
+        dt += p.birthyear;
+        dt += ', ';
+        dt += p.hobby;
+        dt += ', ';
+        dt += 2023- p.birthyear;
+        return dt;
+    }
+    alert(data(person));
+    const salaries = {
+        "Иванов": 50000,
+        "Петров": 60000,
+        "Сидоров": 55000,
+        "Смирнов": 70000,
+        "Кузнецов": 45000,
+        "Васильев": 55000,
+        "Попов": 60000,
+        "Соколов": 55000,
+        "Лебедев": 65000,
+        "Козлов": 50000
+    };
+    var sumsal = 0;
+    for (var surnm in salaries) {
+        sumsal += salaries[surnm];
+    }
+    console.log("Общая зарплата сотрудников:", sumsal);
+</script>
+</body>
+</html>
