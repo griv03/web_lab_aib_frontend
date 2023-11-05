@@ -77,17 +77,17 @@
     person.hobby = "drink";
     person.group = "4";
     function data(p) {
-        let dt = "";
-        dt += p.firstname;
-        dt += ' ';
-        dt += p.surname;
-        dt += ', ';
-        dt += p.birthyear;
-        dt += ', ';
-        dt += p.hobby;
-        dt += ', ';
-        dt += 2023- p.birthyear;
-        return dt;
+        let result = "";
+        result += p.firstname;
+        result += ' ';
+        result += p.surname;
+        result += ', ';
+        result += p.birthyear;
+        result += ', ';
+        result += p.hobby;
+        result += ', ';
+        result += 2023- p.birthyear;
+        return result;
     }
     alert(data(person));
     const salaries = {
@@ -102,11 +102,11 @@
         "Лебедев": 65000,
         "Козлов": 50000
     };
-    var sumsal = 0;
-    for (var surnm in salaries) {
-        sumsal += salaries[surnm];
+    var sumsalaries = 0;
+    for (var surname in salaries) {
+        sumsalaries += salaries[surnm];
     }
-    console.log("Общая зарплата сотрудников:", sumsal);
+    console.log("Общая зарплата сотрудников:", sumsalaries);
 </script>
 </body>
 </html>
