@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    justify-content: space-around;
+}
+.input-group{
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-gap: 10px;
+
+}
+.color-inputs{
+    margin-top: 80px;
+    width: 150px;
+}
+.square{
+    padding:10%;
+}
+.block{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
+    gap: 10px;
+    min-height: 300px;
+    justify-content: space-around;
+    align-content: center;
+}
+.newBlock{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
